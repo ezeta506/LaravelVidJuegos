@@ -33,9 +33,14 @@ class CreateVideojuegosTable extends Migration
      *
      * @return void
      */
+
+     //borrar primero llave foranea y despues la tabla
     public function down()
     {
+        //nombre de la tabla primero
         Schema::table('videojuegos', function (Blueprint $table) {
+            //nombre de la llaveforanea
+            //nomenclatura nombreDeLaTabla_nombreDelCampo_foreign
             $table->dropForeign('videojuegos_user_id_foreign');
             //opcional, para borrar columna
             $table->dropColumn('user_id');
