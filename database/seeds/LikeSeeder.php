@@ -11,6 +11,24 @@ class LikeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $like = new \App\Like();
+        $like->videojuego_id = 1;
+        $like->save();
+
+        $like = new \App\Like();
+        $like->videojuego_id = 2;
+        $like->save();
+
+        $like = new \App\Like();
+        $like->videojuego_id = 3;
+        $like->save();
+
+        $like = new \App\Like();
+        $like->videojuego_id = 3;
+        $like->save();
+
+        $like = new \App\Like();
+        $like->videojuego_id = 2;
+        $like->save();
     }
 }

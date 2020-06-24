@@ -17,13 +17,16 @@ class RolTableSeeder extends Seeder
         $rol = new \App\Rol();
         $rol->name = "administrador";
         $rol->descripcion = "administrador";
+        $rol->save();
 
         $rol = new \App\Rol();
         $rol->name = "publicador";
         $rol->descripcion = "publicador";
+        $rol->save();
 
         $rol = new \App\Rol();
         $rol->name = "cliente";
         $rol->descripcion = "cliente";
+        $rol->save();
     }
 }
